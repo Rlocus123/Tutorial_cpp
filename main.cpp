@@ -46,6 +46,9 @@ int main()
     cout.precision(3);
     cout << "Circle area at initialization : " << fixed << Circle.get_area() << endl;
     cout << "Circle diameter : " << fixed << Circle.get_diameter() << endl;
+	
+	/* Will create volumes */
+	cout << "To be continued with volumes " << endl;
 
     return 0;
 }
