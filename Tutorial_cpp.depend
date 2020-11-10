@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1605038578 source:c:\users\seb\documents\console_c\tutorial_cpp\circle.cpp
+	<iostream>
+	"Circle.hpp"
+
+1605038645 c:\users\seb\documents\console_c\tutorial_cpp\circle.hpp
+
+1605038408 source:c:\users\seb\documents\console_c\tutorial_cpp\geometry.cpp
+	<iostream>
+	"Geometry.hpp"
+
+1605038408 c:\users\seb\documents\console_c\tutorial_cpp\geometry.hpp
+
+1605038578 source:c:\users\seb\documents\console_c\tutorial_cpp\main.cpp
+	<iostream>
+	"Geometry.hpp"
+	"Circle.hpp"
+

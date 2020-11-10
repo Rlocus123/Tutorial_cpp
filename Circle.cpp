@@ -28,20 +28,20 @@ Circle::Circle(void)
     radius = 0 ;
 }
 
-Circle::Circle(double r)
+Circle::Circle(double rad)
 {
-    if(r >= 0.0) {
-        radius = r;
+    if(rad >= 0.0) {
+        radius = rad;
     }
 }
 
 /* -----------------------------------------------------------------------------
 Initialize private variables
 ----------------------------------------------------------------------------- */
-void Circle::init(double r)
+void Circle::init(double rad)
 {
-    if(r >= 0.0) {
-        radius = r;
+    if(rad >= 0.0) {
+        radius = rad;
     }
 }
 

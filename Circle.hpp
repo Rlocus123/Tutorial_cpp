@@ -14,10 +14,10 @@ class Circle
 
     /* Constructors */
     Circle(void) ;
-    Circle(double r);
+    Circle(double rad);
 
     /* Public functions */
-    void init(double r);
+    void init(double rad);
 
     double get_diameter(void);
     double get_area(void);
