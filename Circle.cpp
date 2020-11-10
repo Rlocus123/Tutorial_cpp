@@ -1,9 +1,8 @@
 /* -----------------------------------------------------------------------------
-Project : Tutorial_cpp
-Author : SP
-Date : 10/11/20
+Circle.cpp
 
-Aim of the project : Test git functions and C++
+Contains the functions for Circlce.hpp
+    -> Circle functions
 ----------------------------------------------------------------------------- */
 
 /* -----------------------------------------------------------------------------
@@ -14,7 +13,6 @@ Global includes
 /* -----------------------------------------------------------------------------
 Local includes
 ----------------------------------------------------------------------------- */
-#include "Geometry.hpp"
 #include "Circle.hpp"
 
 /* -----------------------------------------------------------------------------
@@ -23,28 +21,35 @@ Local defines
 using namespace std;
 
 /* -----------------------------------------------------------------------------
-Main function
+Constructor (s)
 ----------------------------------------------------------------------------- */
-int main()
+Circle::Circle(void)
 {
-    /* Create rectangle class */
-    Rectangle Geometry_rect;
-
-    /* Get area */
-    cout << "Rectangle area at initialization : " << Geometry_rect.area() << endl;
-
-    /* Initialize the rectangle */
-    Geometry_rect.init(10, 15);
-
-    /* Check again the area */
-    cout << "Rectangle area after init : " << Geometry_rect.area() << endl;
-
-    /* Create circle */
-    Circle Circle(1.00);
-
-    /* Get area */
-    cout.precision(3);
-    cout << "Circle area at initialization : " << fixed << Circle.area() << endl;
-
-    return 0;
+    radius = 0 ;
 }
+
+Circle::Circle(double r)
+{
+    if(r >= 0.0) {
+        radius = r;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+Initialize private variables
+----------------------------------------------------------------------------- */
+void Circle::init(double r)
+{
+    if(r >= 0.0) {
+        radius = r;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+Compute area
+----------------------------------------------------------------------------- */
+double Circle::area(void)
+{
+    return PI * radius * radius ;
+}
+
