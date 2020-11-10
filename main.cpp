@@ -44,7 +44,8 @@ int main()
 
     /* Get area */
     cout.precision(3);
-    cout << "Circle area at initialization : " << fixed << Circle.area() << endl;
+    cout << "Circle area at initialization : " << fixed << Circle.get_area() << endl;
+    cout << "Circle diameter : " << fixed << Circle.get_diameter() << endl;
 
     return 0;
 }
