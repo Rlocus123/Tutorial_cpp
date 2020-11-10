@@ -18,12 +18,14 @@ class Circle
 
     /* Public functions */
     void init(double r);
-    double area(void);
+
+    double get_diameter(void);
+    double get_area(void);
 
   private:
 
     /* Private parameters */
-    double radius;
+    double radius, diameter;
     const double PI = 3.141;
 };
 
